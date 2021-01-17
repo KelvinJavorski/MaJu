@@ -19,6 +19,12 @@
 		B6B8833325B488E100D5F593 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B8833225B488E100D5F593 /* User.swift */; };
 		B6B8833B25B489A300D5F593 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B8833A25B489A300D5F593 /* Shared.swift */; };
 		B6B8837625B4A16200D5F593 /* InscricaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B8837525B4A16100D5F593 /* InscricaoViewController.swift */; };
+		B6B8837925B4CFAB00D5F593 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B8837825B4CFAA00D5F593 /* OnBoardingViewController.swift */; };
+		B6B8837C25B4DAA900D5F593 /* OnBoardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B8837B25B4DAA800D5F593 /* OnBoardingCollectionViewCell.swift */; };
+		B6B8837F25B4EAD600D5F593 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B8837E25B4EAD500D5F593 /* UIColorExtension.swift */; };
+		B6B8838225B4ECAE00D5F593 /* JobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B8838125B4ECAE00D5F593 /* JobsViewController.swift */; };
+		B6B8838525B4ECD400D5F593 /* CloserJobsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B8838425B4ECD400D5F593 /* CloserJobsCollectionViewCell.swift */; };
+		B6B8838825B4ECE000D5F593 /* OtherJobsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B8838725B4ECDF00D5F593 /* OtherJobsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,12 @@
 		B6B8833225B488E100D5F593 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B6B8833A25B489A300D5F593 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		B6B8837525B4A16100D5F593 /* InscricaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscricaoViewController.swift; sourceTree = "<group>"; };
+		B6B8837825B4CFAA00D5F593 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		B6B8837B25B4DAA800D5F593 /* OnBoardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		B6B8837E25B4EAD500D5F593 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		B6B8838125B4ECAE00D5F593 /* JobsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsViewController.swift; sourceTree = "<group>"; };
+		B6B8838425B4ECD400D5F593 /* CloserJobsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloserJobsCollectionViewCell.swift; sourceTree = "<group>"; };
+		B6B8838725B4ECDF00D5F593 /* OtherJobsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherJobsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +121,7 @@
 			children = (
 				B6B8833225B488E100D5F593 /* User.swift */,
 				B6B8833A25B489A300D5F593 /* Shared.swift */,
+				B6B8837E25B4EAD500D5F593 /* UIColorExtension.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -118,6 +131,11 @@
 			children = (
 				B6B882A025B4614800D5F593 /* ViewController.swift */,
 				B6B8837525B4A16100D5F593 /* InscricaoViewController.swift */,
+				B6B8837825B4CFAA00D5F593 /* OnBoardingViewController.swift */,
+				B6B8837B25B4DAA800D5F593 /* OnBoardingCollectionViewCell.swift */,
+				B6B8838125B4ECAE00D5F593 /* JobsViewController.swift */,
+				B6B8838425B4ECD400D5F593 /* CloserJobsCollectionViewCell.swift */,
+				B6B8838725B4ECDF00D5F593 /* OtherJobsCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -263,12 +281,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B8837C25B4DAA900D5F593 /* OnBoardingCollectionViewCell.swift in Sources */,
 				B6B8837625B4A16200D5F593 /* InscricaoViewController.swift in Sources */,
 				B6B8833B25B489A300D5F593 /* Shared.swift in Sources */,
+				B6B8838825B4ECE000D5F593 /* OtherJobsCollectionViewCell.swift in Sources */,
 				B6B882A725B4614800D5F593 /* Vagas.xcdatamodeld in Sources */,
+				B6B8837925B4CFAB00D5F593 /* OnBoardingViewController.swift in Sources */,
 				B6B882A125B4614800D5F593 /* ViewController.swift in Sources */,
 				B6B8829D25B4614800D5F593 /* AppDelegate.swift in Sources */,
+				B6B8837F25B4EAD600D5F593 /* UIColorExtension.swift in Sources */,
 				B6B8833325B488E100D5F593 /* User.swift in Sources */,
+				B6B8838225B4ECAE00D5F593 /* JobsViewController.swift in Sources */,
+				B6B8838525B4ECD400D5F593 /* CloserJobsCollectionViewCell.swift in Sources */,
 				B6B8829F25B4614800D5F593 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
