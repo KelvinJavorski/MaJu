@@ -15,5 +15,6 @@ target 'Vagas' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Core'
   pod 'Firebase/Database'
+  pod 'GoogleSignIn'
 
 end
