@@ -10,23 +10,39 @@ import FirebaseDatabase
 import GoogleSignIn
 import FirebaseAuth
 
-class ViewController: UIViewController{
+class ViewController: UIViewController, GIDSignInDelegate{
     
     @IBOutlet var signInButton: GIDSignInButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         GIDSignIn.sharedInstance()?.presentingViewController = self
-        if(GIDSignIn.sharedInstance()?.currentUser != nil){
-            print(GIDSignIn.sharedInstance().currentUser.profile.name)
-        }
-        else{
-            GIDSignIn.sharedInstance()?.signIn()
-        }
-        
-
+        GIDSignIn.sharedInstance()?.delegate = self
     }
     
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if (error == nil) {
+            guard let authentication = user.authentication else { return }
+            let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
+            
+            Auth.auth().signIn(with: credential) { (authResult, error) in
+                if let error = error {
+                    return
+                }
+            }
+            performSegue(withIdentifier: "inscrição", sender: nil)
+            //                GIDSignIn.sharedInstance().signOut()
+            
+        } else {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+        if let error = error{
+            print(error.localizedDescription)
+        }
+    }
 }
 
 //class ViewController: UIViewController {
