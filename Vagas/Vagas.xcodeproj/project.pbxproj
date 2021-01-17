@@ -16,6 +16,9 @@
 		B6B882A925B4614A00D5F593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6B882A825B4614A00D5F593 /* Assets.xcassets */; };
 		B6B882AC25B4614A00D5F593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B882AA25B4614A00D5F593 /* LaunchScreen.storyboard */; };
 		B6B8831025B479A000D5F593 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6B8830F25B479A000D5F593 /* GoogleService-Info.plist */; };
+		B6B8833325B488E100D5F593 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B8833225B488E100D5F593 /* User.swift */; };
+		B6B8833B25B489A300D5F593 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B8833A25B489A300D5F593 /* Shared.swift */; };
+		B6B8837625B4A16200D5F593 /* InscricaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B8837525B4A16100D5F593 /* InscricaoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		B6B882AB25B4614A00D5F593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6B882AD25B4614A00D5F593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6B8830F25B479A000D5F593 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B6B8833225B488E100D5F593 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B6B8833A25B489A300D5F593 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		B6B8837525B4A16100D5F593 /* InscricaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscricaoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,17 +82,44 @@
 		B6B8829B25B4614800D5F593 /* Vagas */ = {
 			isa = PBXGroup;
 			children = (
+				B6B8833125B488A600D5F593 /* Controller */,
+				B6B8833025B4889B00D5F593 /* Model */,
+				B6B8832F25B4888000D5F593 /* View */,
+				B6B882AD25B4614A00D5F593 /* Info.plist */,
 				B6B8830F25B479A000D5F593 /* GoogleService-Info.plist */,
 				B6B8829C25B4614800D5F593 /* AppDelegate.swift */,
 				B6B8829E25B4614800D5F593 /* SceneDelegate.swift */,
-				B6B882A025B4614800D5F593 /* ViewController.swift */,
-				B6B882A225B4614800D5F593 /* Main.storyboard */,
-				B6B882A825B4614A00D5F593 /* Assets.xcassets */,
-				B6B882AA25B4614A00D5F593 /* LaunchScreen.storyboard */,
-				B6B882AD25B4614A00D5F593 /* Info.plist */,
 				B6B882A525B4614800D5F593 /* Vagas.xcdatamodeld */,
 			);
 			path = Vagas;
+			sourceTree = "<group>";
+		};
+		B6B8832F25B4888000D5F593 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6B882A225B4614800D5F593 /* Main.storyboard */,
+				B6B882A825B4614A00D5F593 /* Assets.xcassets */,
+				B6B882AA25B4614A00D5F593 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6B8833025B4889B00D5F593 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6B8833225B488E100D5F593 /* User.swift */,
+				B6B8833A25B489A300D5F593 /* Shared.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6B8833125B488A600D5F593 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B6B882A025B4614800D5F593 /* ViewController.swift */,
+				B6B8837525B4A16100D5F593 /* InscricaoViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		E807E8EB111DB66F333ADA78 /* Frameworks */ = {
@@ -230,9 +263,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B8837625B4A16200D5F593 /* InscricaoViewController.swift in Sources */,
+				B6B8833B25B489A300D5F593 /* Shared.swift in Sources */,
 				B6B882A725B4614800D5F593 /* Vagas.xcdatamodeld in Sources */,
 				B6B882A125B4614800D5F593 /* ViewController.swift in Sources */,
 				B6B8829D25B4614800D5F593 /* AppDelegate.swift in Sources */,
+				B6B8833325B488E100D5F593 /* User.swift in Sources */,
 				B6B8829F25B4614800D5F593 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
