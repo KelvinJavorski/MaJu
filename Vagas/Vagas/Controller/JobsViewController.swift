@@ -44,16 +44,16 @@ class JobsViewController: UIViewController, UICollectionViewDelegate, UICollecti
             if (indexPath.row == 0){
                 myCell.empresaLabel.text = "Banco do João"
             }
-            if (indexPath.row == 1){
+            else if (indexPath.row == 1){
                 myCell.empresaLabel.text = "Banca da Stefi"
             }
-            if (indexPath.row == 2){
+            else if (indexPath.row == 2){
                 myCell.empresaLabel.text = "Jardim do Otavio"
             }
-            if (indexPath.row == 3){
+            else if (indexPath.row == 3){
                 myCell.empresaLabel.text = "Papelaria Lêtudo"
             }
-            if (indexPath.row == 4){
+            else if (indexPath.row == 4){
                 myCell.empresaLabel.text = "Ebanx"
             }
             else{
