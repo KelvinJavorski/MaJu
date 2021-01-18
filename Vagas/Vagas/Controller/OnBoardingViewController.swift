@@ -16,14 +16,8 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate, UICo
         
         collectionView?.dataSource = self
         collectionView?.delegate = self
-        setupCollectionView()
     }
     
-    func setupCollectionView(){
-        if let flowLayout = collectionView?.collectionViewLayout as? UICollectionViewFlowLayout{
-            //            flowLayout.scrollDirection = .horizontal
-        }
-    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         1
     }
