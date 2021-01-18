@@ -25,6 +25,8 @@
 		B6B8838225B4ECAE00D5F593 /* JobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B8838125B4ECAE00D5F593 /* JobsViewController.swift */; };
 		B6B8838525B4ECD400D5F593 /* CloserJobsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B8838425B4ECD400D5F593 /* CloserJobsCollectionViewCell.swift */; };
 		B6B8838825B4ECE000D5F593 /* OtherJobsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B8838725B4ECDF00D5F593 /* OtherJobsCollectionViewCell.swift */; };
+		B6B8838B25B504D500D5F593 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B8838A25B504D500D5F593 /* HeaderCollectionReusableView.swift */; };
+		B6B883AA25B50ABB00D5F593 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B883A925B50ABB00D5F593 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		B6B8838125B4ECAE00D5F593 /* JobsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsViewController.swift; sourceTree = "<group>"; };
 		B6B8838425B4ECD400D5F593 /* CloserJobsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloserJobsCollectionViewCell.swift; sourceTree = "<group>"; };
 		B6B8838725B4ECDF00D5F593 /* OtherJobsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherJobsCollectionViewCell.swift; sourceTree = "<group>"; };
+		B6B8838A25B504D500D5F593 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		B6B883A925B50ABB00D5F593 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,8 @@
 				B6B8838125B4ECAE00D5F593 /* JobsViewController.swift */,
 				B6B8838425B4ECD400D5F593 /* CloserJobsCollectionViewCell.swift */,
 				B6B8838725B4ECDF00D5F593 /* OtherJobsCollectionViewCell.swift */,
+				B6B8838A25B504D500D5F593 /* HeaderCollectionReusableView.swift */,
+				B6B883A925B50ABB00D5F593 /* DetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -281,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B8838B25B504D500D5F593 /* HeaderCollectionReusableView.swift in Sources */,
 				B6B8837C25B4DAA900D5F593 /* OnBoardingCollectionViewCell.swift in Sources */,
 				B6B8837625B4A16200D5F593 /* InscricaoViewController.swift in Sources */,
 				B6B8833B25B489A300D5F593 /* Shared.swift in Sources */,
@@ -294,6 +301,7 @@
 				B6B8838225B4ECAE00D5F593 /* JobsViewController.swift in Sources */,
 				B6B8838525B4ECD400D5F593 /* CloserJobsCollectionViewCell.swift in Sources */,
 				B6B8829F25B4614800D5F593 /* SceneDelegate.swift in Sources */,
+				B6B883AA25B50ABB00D5F593 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,5 +8,8 @@
 import UIKit
 
 class OtherJobsCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var empresaLabel: UILabel!
+    @IBOutlet weak var cardView: UIView!
     
 }
