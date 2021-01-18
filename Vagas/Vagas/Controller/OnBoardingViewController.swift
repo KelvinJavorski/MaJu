@@ -25,39 +25,28 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate, UICo
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "onboardingCell", for: indexPath) as! OnBoardingCollectionViewCell
         setupCell(cell: myCell)
-        if (myCell.pageControl.currentPage == 1){
+        if (myCell.pageControl.currentPage == 0){
             myCell.imageView.image = UIImage(named: "onBoarding-1")
             myCell.titleTextLabel.text = "Encontre estágios feitos para você"
             myCell.explanationTextLabel.text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
             
         }
+        else if (myCell.pageControl.currentPage == 1){
+            myCell.imageView.image = UIImage(named: "onboarding-2")
+            myCell.titleTextLabel.text = "Empresas preocupadas com você"
+            myCell.explanationTextLabel.text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+            
+        }
         else if (myCell.pageControl.currentPage == 2){
-            myCell.imageView.image = UIImage(named: "ebanx")
-            myCell.titleTextLabel.text = "Encontre estágios feitos para você"
-            myCell.explanationTextLabel.text = "opa"
+            myCell.imageView.image = UIImage(named: "onboarding-3")
+            myCell.titleTextLabel.text = "Estágios Remotos"
+            myCell.explanationTextLabel.text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
             
         }
         else if (myCell.pageControl.currentPage == 3){
-            myCell.imageView.image = UIImage(named: "onBoarding-1")
-            myCell.titleTextLabel.text = "Encontre estágios feitos para você"
-            myCell.explanationTextLabel.text = "teste"
-            
-        }
-        else if (myCell.pageControl.currentPage == 4){
-            myCell.imageView.image = UIImage(named: "onBoarding-1")
-            myCell.titleTextLabel.text = "Encontre estágios feitos para você"
-            myCell.explanationTextLabel.text = "alô 2"
-            
-        }
-        else if (myCell.pageControl.currentPage == 5){
-            myCell.imageView.image = UIImage(named: "onBoarding-1")
-            myCell.titleTextLabel.text = "Encontre estágios feitos para você"
-            myCell.explanationTextLabel.text = "alô"
-            
-        }
-        
-        if (indexPath.row == 1){
-            myCell.backgroundColor = UIColor.green
+            myCell.imageView.image = UIImage(named: "onboarding-4")
+            myCell.titleTextLabel.text = "Empresas com creche para a sua criança"
+            myCell.explanationTextLabel.text = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
             
         }
         return myCell
